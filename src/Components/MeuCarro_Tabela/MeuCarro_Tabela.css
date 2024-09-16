@@ -1,0 +1,397 @@
+.container {  
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Carros Infos Infos Infos"
+      "Carros Infos Infos Infos"; 
+      height: 300px;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 17, 58, 0.05);
+      overflow: hidden;
+}
+.infos {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "quilometragem prox_revi diag_salvos"
+      "gastos seguro diag_salvos"; 
+    grid-area: Infos; 
+}
+.infos div{
+    border: 0.5px solid rgba(0, 17, 58, 0.05);
+    padding: 21px 26px;
+    position: relative;
+}
+.infos p{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    fill: rgba(0, 17, 58, 0.60);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+     
+    color: rgba(0, 17, 58, 0.60); 
+}
+.infos span{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.3125rem, 1.25rem + 0.3125vw, 1.75rem);
+    line-height: 1;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+     
+    color: rgba(0, 17, 58, 0.60);
+}
+.Carros { 
+  grid-area: Carros;
+  background-color: #2b66ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Carros:hover > ul::-webkit-scrollbar-thumb {
+    background-color: #e2e2e2ab;    /* color of the scroll thumb */
+}
+.Carros ul{
+    list-style: none;
+    padding: 14px 13px 14px 18px;
+    margin: 0;
+    max-height: 210px;
+    overflow: auto;
+}
+/* -------------MUDAR O STYLE DO SCROLLBAR---------------- */
+
+.Carros ul::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+.Carros ul::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+  border: none;
+}
+
+.Carros ul::-webkit-scrollbar-thumb {
+  background-color: #e2e2e200;    /* color of the scroll thumb */
+  border-radius: 10px;
+}
+.Carros ul::-webkit-scrollbar-thumb:hover {
+  background-color: #fff;
+}
+.Carros li{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: left;
+     
+    color: #ffffff;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+    transition: 0.1s;
+}
+.Carros li:hover{
+    background-color: #ffffff23;
+    opacity: 1;
+}
+.Carros .selected{
+    background-color: #ffffff23;
+    opacity: 1;
+}
+.Carros button{
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    width: auto;
+    padding: 18px;
+    background-color: #fff;
+    margin: 14px 18px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+     
+    color: #2b66ff; 
+    opacity: 0.93;   
+}
+.Carros button:hover{
+    opacity: 1;
+}
+.Carros button p{
+    margin: 0;
+    padding: 0;
+}
+
+.quilometragem { grid-area: quilometragem; }
+
+.prox_revi { grid-area: prox_revi; }
+
+.gastos { grid-area: gastos; }
+
+.seguro { grid-area: seguro; }
+  
+.diag_salvos { grid-area: diag_salvos;     border: 0.5px solid rgba(0, 17, 58, 0.05); padding: 0px !important; }
+.diag_salvos p{
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    box-sizing: border-box;
+     
+    color: rgba(0, 17, 58, 0.80);
+    width: 100%;
+    height: 70px;
+    border-bottom: 0.5px solid rgba(0, 17, 58, 0.05);
+}
+.diag_salvos ul{
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    margin: 0;
+    position: relative;
+    overflow: auto;
+    max-height: 230px;
+}
+
+.diag_salvos:hover > ul::-webkit-scrollbar-thumb {
+    background-color: #e2e2e2;    /* color of the scroll thumb */
+}
+
+/* -------------MUDAR O STYLE DO SCROLLBAR---------------- */
+
+.diag_salvos ul::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+.diag_salvos ul::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+  border: none;
+}
+
+.diag_salvos ul::-webkit-scrollbar-thumb {
+  background-color: #e2e2e200;    /* color of the scroll thumb */
+  border-radius: 10px;
+}
+.diag_salvos ul::-webkit-scrollbar-thumb:hover {
+  background-color: #C4C7D0;
+}
+.diag_salvos li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 19px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.diag_salvos li:hover{
+    background-color: #00113A10;
+}
+.diag_salvos li h3{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.7321rem + 0.0893vw, 0.875rem);
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: none;
+     
+    color: rgba(0, 17, 58, 0.80);
+}
+.diag_salvos li p{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.625rem, 0.6071rem + 0.0893vw, 0.75rem);
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border: none;
+
+    color: rgba(0, 17, 58, 0.60);    
+}
+
+.diag_salvos li svg{
+    font-size: clamp(0.75rem, 0.7321rem + 0.0893vw, 0.875rem);
+    position: absolute;
+    right: 19px;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .container {
+        height: auto;
+        display: grid; 
+        grid-auto-flow: row dense; 
+        grid-template-columns: 0.2fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "Carros infos"; 
+    }
+    .infos {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.5fr 0.5fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "quilometragem prox_revi"
+          "gastos seguro"
+          "diag_salvos diag_salvos"; 
+        grid-area: infos; 
+      }
+      .Carros li{
+        padding: 18px 21px;
+      }
+      .Carros ul{
+        max-height: 100%;
+        padding: 12px 16px 12px 16px;
+      }
+      .Carros button{
+        margin: 12px 16px;
+      }
+}
+
+@media (max-width: 555px){
+    .container {
+        display: grid; 
+        grid-auto-flow: row dense; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "Carros"
+          "infos"; 
+      }
+      .Carros ul{
+        max-height: 120px;
+        display: flex;
+      }
+      .Carros ul::-webkit-scrollbar {
+        width: 0px !important;      
+        height: 0px;         /* width of the entire scrollbar */
+      }
+      .Carros{
+        flex-direction: row;
+        overflow: auto;
+        align-items: center;
+      }
+      .Carros button p{
+        display: none;
+      }
+      .infos div{
+        padding: 16px 18px;
+      }
+      .infos span{
+        right: 16px;
+        bottom: 16px;
+      }
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+.dark-mode .container{
+    background: #00113a10;
+}
+.dark-mode .Carros{
+    background: #00113a10;
+}
+.dark-mode .Carros:hover > ul::-webkit-scrollbar-thumb {
+    background-color: #00000023;    /* color of the scroll thumb */
+}
+.dark-mode .Carros ul::-webkit-scrollbar-thumb:hover {
+    background-color: #00000080;
+}
+.dark-mode .Carros .selected{
+    background-color: #00000023;
+}
+.dark-mode .Carros li{
+    color: #000;
+}
+.dark-mode .Carros li:hover{
+    background-color: #00000023;
+}
+.dark-mode .Carros button{
+    background-color: #000;
+    color: #ffffffd7;
+}
+.dark-mode .infos p{
+    fill: #000000cc;
+    color: #000000cc;
+}
+.dark-mode .infos span{
+    color: #000000cc;
+}
+.dark-mode .diag_salvos:hover > ul::-webkit-scrollbar-thumb {
+    background-color: #00000023;    /* color of the scroll thumb */
+}
+.dark-mode .diag_salvos ul::-webkit-scrollbar-thumb:hover {
+    background-color: #00000080;
+}
+.dark-mode .diag_salvos h3{
+    color: #000000cc;
+}

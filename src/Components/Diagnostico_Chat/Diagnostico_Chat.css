@@ -1,0 +1,364 @@
+.TUDO_CHATBOT{
+    width: 100%;
+    height: 100dvh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    fill: #2B66FF;
+    position: absolute;
+    transition: 0.5s;
+
+}
+.dentro_chatbot{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.logo_chat{
+    height: 45px;
+}
+.titu_chat{
+    font-family: "Roobert TWHINT Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(2.625rem, 2.4286rem + 0.9821vw, 4rem);
+    line-height: auto;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #00113A;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.cor1{
+    color: #2B66FF;
+}
+.sub_titu{
+    font-family: PP Mori;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem);
+    line-height: auto;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin: 0;
+     
+    color: #00113A;
+    opacity: 0.6;
+}
+.btn_chat{
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.5rem);
+    line-height: 38px;
+    text-align: center;
+    margin-top: 3vh;
+    cursor: pointer;
+     
+    color: #ffffff;
+    background: #2b66ff;
+ 
+    border-radius: 15px;
+    padding: 25px 80px;
+    transition: 0.3s;
+}
+.btn_chat:hover{
+    background-color: #00113A;
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+.dark-mode .btn_chat{
+  background: #00113A23;
+  color: #00113A;
+}
+.dark-mode .btn_chat:hover{
+  background-color: #00113A40;
+}
+
+/* ... outros estilos ... */
+
+.chatbot-container {
+    width: 100%;
+    height: calc(100% - 150px); /* Ajuste a altura conforme necessário */
+  }
+
+
+/* -------------CHATBOT---------------- */
+  .WatsonAssistantChatHost{
+    width: 100% !important;
+  }
+.WatsonAssistantChatHost[style]{
+    position: absolute;
+    width: 100% !important;
+    height: 100dvh !important;
+    top: 0;
+    transition: 0.5s;
+  }
+  #WACContainer.WACContainer{
+    width: 100% !important;
+    height: 100dvh !important;
+    transition: 0.5s;
+  }
+  #WACContainer.WACContainer .WACWidget.WACWidget--launched.WACWidget--defaultElement{
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative !important;
+    box-shadow: 0px 0px 150px 0px rgba(0, 17, 58, 0.15) !important;
+    padding: 30px;
+    border-radius: 20px !important;
+
+    animation: WACWidgetIn2 1.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both !important;
+    background-color: #fff;
+  }
+  @keyframes WACWidgetIn2 {
+    0% {
+        width: 0%;
+        height: 0%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        width: 80%;
+        height: 90%;
+        filter: blur(0);
+        opacity: 1;
+    }
+  }
+
+  @media (max-width: 888px) {
+    #WACContainer.WACContainer .WACWidget.WACWidget--launched.WACWidget--defaultElement{
+        padding: 15px;
+        width: 90% !important;
+    }
+    #WACContainer.WACContainer .WACWidget__regionContainer{
+        padding-top: 0px !important;
+    }
+    #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round .WACLauncher__Button:not(.WACLauncher__TourButton){
+        padding-left: 70vw !important;
+    }
+    #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round{
+      top: 0px !important;
+    }
+    #WACContainer.WACContainer .WACWidget__FocusTrapContainer{
+      height: 85% !important;
+      align-items: flex-start !important;
+    }
+  }
+  #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round{
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0px !important;
+    transition: 0.3s;
+  }
+  #WACContainer.WACContainer .WACWidget.WACWidget--defaultElement{
+    inset: auto !important;
+  }
+  #WACContainer.WACContainer button.WACLauncher__Button svg{
+    opacity: 0;
+  }
+  #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round .WACLauncher__Button:not(.WACLauncher__TourButton){
+    background: url(https://res.cloudinary.com/dr0nki74e/image/upload/f_auto,q_auto/v1/vapt-vupt/bot%C3%A3o%20chat/li0bmcyk0lxunelwe5uh);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #WACContainer.WACContainer .cds--white, #WACContainer.WACContainer .cds--g10, #WACContainer.WACContainer .cds--g90, #WACContainer.WACContainer .cds--g100{
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --cds-chat-BASE-border-radius-med: 0px !important;
+  }
+  #WACContainer.WACContainer .WACLauncher__ButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    position: relative !important;
+  }
+  #WACContainer.WACContainer .WACWidget__regionContainer{
+    position: relative;
+    padding-top: 112px;
+    width: 100% !important;
+    height: 100dvh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  #WACContainer.WACContainer .WACWidget__FocusTrapContainer{
+    width: 100% !important;
+    height: 85% !important;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .WACLauncherComplex__ContentButton{
+    display: none !important;
+  }
+  #WACContainer.WACContainer .WACLauncherComplex__Container--introAnimation .WACLauncher__CloseButton{
+    display: none !important;
+  }
+  .cds--tag .WACLauncher__CloseButton .cds--tag--interactive{
+    display: none !important;
+  }
+  #tag-7{
+    display: none !important;
+  }
+  
+  #WACContainer.WACContainer .cds--g10, #WACContainer.WACContainer .cds--g100, #WACContainer.WACContainer .cds--g90, #WACContainer.WACContainer .cds--white{
+    --cds-chat-LAUNCHER-default-size: 0px !important;
+    --cds-chat-LAUNCHER-position-bottom: 0px !important;
+  }
+  #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round .WACLauncher__Button:not(.WACLauncher__TourButton){
+    position: absolute;
+    width: 478px !important;
+    padding-left: 0px !important;
+    height: 80px !important;
+    border-radius: 20px !important;
+    background-color: #2B66FF !important;
+    transition: 0.2s !important;
+    animation: slide-in-blurred-bottom2 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
+  }
+  @keyframes slide-in-blurred-bottom2 {
+    0% {
+      -webkit-filter: blur(20px);
+              filter: blur(20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .WACLauncher__ButtonContainer .WACLauncher__ButtonContainer--round .WACLauncherComplex__SmallLauncherContainer{
+    height: 0px !important;
+    padding: 0px !important;
+  }
+  #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round .WACLauncher__Button:not(.WACLauncher__TourButton):hover{
+    transform: scale(0.98);
+  }
+  #WACContainer.WACContainer .WACHomeScreen{
+    background: #fff !important;
+  }
+  #WACContainer.WACContainer .WAC--primaryColor{
+    background: #fff !important;
+  }
+  #WACContainer.WACContainer .WACInputContainer{
+    border-radius: 50px;
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    border: 2px solid #00113A10 !important;
+  }
+
+
+
+  /*  AVISO BOT  */
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container{
+    max-width: 478px !important;
+    max-height: 150px;
+    right: 0 !important;
+    max-width: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #WACContainer.WACContainer .WACLauncherComplex__Container--simpleAnimation .WACLauncher__CloseButton{
+    display: none !important;
+  }
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__Text{
+    background-color: #2B66FF;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container--simpleAnimation .WACLauncherComplex__SmallLauncherContainer, #WACContainer.WACContainer .WACLauncherComplex__Container--simpleAnimation .WACLauncher__ButtonContainer.WACLauncherComplex__SmallLauncherContainer .WACLauncher__Button{
+    width: 100% !important;
+    padding: 0px !important;
+    padding-left: 380px !important;
+    height: 80px !important;
+    border-radius: 20px !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: #2B66FF !important;
+    transition: 0.2s !important;
+  }
+  .WACLauncher__ButtonContainer .WACLauncher__ButtonContainer--round .WACLauncherComplex__SmallLauncherContainer{
+    height: 0px !important;
+  }
+
+
+
+  /*    MADE WITH UBM   */
+  #WACContainer.WACContainer .WACBrandingBanner{
+    display: none !important;
+  }
+
+  #watson-chat-container{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    z-index: 1;
+  }
+
+
+.itens_antes_chat{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-110px);
+  opacity: 0;
+  transition: 0.4s !important;
+  animation: slide-in-blurred-bottom3 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.9s both;
+}
+@keyframes slide-in-blurred-bottom3 {
+  0% {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@media (max-width:888px) {
+  .itens_antes_chat{
+    transform: translateY(-160px);
+  }
+}
+.WACContainer{
+  width: 100% !important;
+}
+
+
+
+.dark-mode   #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round .WACLauncher__Button:not(.WACLauncher__TourButton){
+  background: url(https://res.cloudinary.com/dr0nki74e/image/upload/f_auto,q_auto/v1/vapt-vupt/bot%C3%A3o%20chat/i6xfx360ponkqi018lct);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

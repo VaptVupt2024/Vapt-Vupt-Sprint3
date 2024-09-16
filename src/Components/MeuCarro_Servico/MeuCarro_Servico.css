@@ -1,0 +1,81 @@
+.MeuCarro_Servico{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    padding-bottom: 1.5em;
+    gap: 1.5em;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+.MeuCarro_Servico img{
+    width: 100%;
+    aspect-ratio: 300 / 136;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.MeuCarro_Servico h2{
+    width: 45%;
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.5rem);
+    line-height: 1.03;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0;
+    margin-top: 0.3em;
+    padding: 0px 38px;
+     
+    color: #00113a;
+}
+.MeuCarro_Servico p{
+    font-family: PP Mori;
+    font-style: normal;
+    font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 1rem);
+    line-height: auto;
+    text-align: left;
+    margin: 0;
+    padding: 0px 38px;
+    max-height: 0px;
+     
+    color: rgba(0, 17, 58, 0.40);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.MeuCarro_Servico:hover > .MeuCarro_Servico_img{
+    aspect-ratio: 300 / 1;
+    opacity: 0;
+}
+.MeuCarro_Servico:hover > .MeuCarro_Servico_desc{
+    position: relative;
+    opacity: 1;
+}
+
+
+@media (max-width:1440px) {
+    .MeuCarro_Servico{
+        gap: 0.8em; 
+        padding-bottom: 0.8em;
+    }
+    .MeuCarro_Servico h2{
+        padding: 0px 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .MeuCarro_Servico p{
+        padding: 0px 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .MeuCarro_Servico{
+    background-color: #00113a10;
+}

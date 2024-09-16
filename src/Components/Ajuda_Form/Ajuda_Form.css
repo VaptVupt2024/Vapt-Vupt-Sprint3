@@ -1,0 +1,234 @@
+.ajuda_Form{
+    width: 100%;
+    background-color: #fff;
+    padding: 36px 43px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+}
+.ajuda_Form div{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex: none;
+}
+.ajuda_Form div img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.ajuda_Form div label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ajuda_Form div label div{
+    gap: 10px;
+}
+.ajuda_Form div label div input{
+    width: 100%;
+    font-family: PP Mori;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0;
+    padding: 22px 35px;
+    box-sizing: border-box;
+     
+    color: rgba(0, 17, 58, 0.70);
+    background: rgba(0, 17, 58, 0.05);
+ 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.ajuda_Form div label div input:focus{
+    background: rgba(0, 17, 58, 0.10);
+}
+.ajuda_Form div label textarea:focus{
+    background: rgba(0, 17, 58, 0.10);
+}
+.ajuda_Form div label textarea{
+    width: 100%;
+    height: -webkit-fill-available;
+    min-height: 185px;
+    font-family: PP Mori;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0;
+    padding: 22px 35px;
+    box-sizing: border-box;
+     
+    color: rgba(0, 17, 58, 0.70);
+    background: rgba(0, 17, 58, 0.05);
+ 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.ajuda_Form div button{
+    width: 50%;
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: center;
+     
+    color: #ffffff;
+    background: #2b66ff;
+ 
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.ajuda_Form div button:hover{
+    background-color: #00113A;
+}
+.ajuda_Form div ul{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex: none;
+}
+.ajuda_Form div ul li{
+    width: 50%;
+    list-style: none;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    margin: 0;
+    color: rgba(0, 17, 58, 0.70);
+    background: rgba(0, 17, 58, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ajuda_Form div ul li a{
+    width: auto !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.ajuda_Form div ul li a:hover{
+    background-color: transparent;
+}
+.ajuda_Form div ul a{
+    width: 50%;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    color: rgba(0, 17, 58, 0.70);
+    background: rgba(0, 17, 58, 0.05);
+
+    font-family: PP Mori;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 11px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    color: rgba(0, 17, 58, 0.4000000059604645);
+}
+.ajuda_Form div ul a:hover{
+    color: rgba(0, 17, 58, 0.80);
+    background: rgba(0, 17, 58, 0.10);
+}
+
+/* ================================================================ */
+/* TABLET */
+/* ================================================================ */
+@media (max-width: 1200px) {
+    .ajuda_Form div:first-child{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ajuda_Form div:last-child{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .ajuda_Form div div{
+        flex-direction: column;
+    }
+    .ajuda_Form div img{
+        width: 100%;
+        height: 250px;
+    }
+    .ajuda_Form div ul{
+        width: 100%;
+        gap: 10px;
+    }
+    .ajuda_Form div ul li{
+        padding: 22px 35px;
+    }
+    .ajuda_Form div button{
+        width: 100%;
+    }
+}
+
+/* ================================================================ */
+/* MOBILE */
+/* ================================================================ */
+@media (max-width: 555px) {
+    .ajuda_Form{
+        padding: 18px 22px;
+    }
+    .ajuda_Form div ul li{
+        padding: 22px 25px;
+    }
+    .ajuda_Form div label div input{
+        padding: 22px 25px;
+    }
+    .ajuda_Form div label textarea{
+        padding: 22px 25px;
+    }
+    .ajuda_Form div ul a{
+        padding: 22px 25px;
+    }
+}
+
+
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .ajuda_Form{
+    background-color: #00113a10;
+}
+.dark-mode .ajuda_Form div button{
+    color: #000;
+    background-color: #93CFFF;
+}
+.dark-mode .ajuda_Form div button:hover{
+    background-color: #cbe7ff;
+}

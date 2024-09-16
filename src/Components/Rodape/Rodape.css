@@ -1,0 +1,305 @@
+/* -------------BASE---------------- */
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+  
+  
+  
+  /* -------------LINKS---------------- */
+  
+  .rodape_links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links{
+    display: flex;
+  }
+  .sitemap{
+    display: flex;
+    flex-direction: column;
+  }
+  .sitemap4{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    margin-left: 8vw;
+  }
+  .sitemap_titu{
+    /* Rectangle 242 (rectangle) */
+    width: 192px;
+    height: 40px;
+    margin: 0;
+    
+    font-family: "Roobert TWHINT Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.125rem, 1.1071rem + 0.0893vw, 1.25rem);
+    line-height: 25px;
+    text-align: left;
+    
+    color: #00113a;
+    display: flex;
+    align-items: center;
+  }
+  .dentro_sitemap{
+    position: absolute;
+  }
+  
+  .anchor2{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgba(0, 17, 58, 0.08);
+  
+    border-color: rgba(0, 17, 58, 0.08);
+    border-width: 0px 0px 2px 0px;
+  
+    width: 192px;
+    height: 40px;
+    position: relative;
+    margin: 0;
+  
+    font-family: "Roobert TWHINT SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(1.125rem, 1.1071rem + 0.0893vw, 1.25rem);
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+     
+    color: rgba(0, 17, 58, 0.5);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .anchor2:hover{
+    color: rgb(0, 17, 58);
+  }
+  
+  /* ANIMAÇÃO HOVER ANCHOR */
+  .menu-item2 {
+    text-indent: 0;
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+  }
+  .menu-item2::after {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2B66FF;
+    z-index: -1;
+    transform: scale3d(0.001,1,1);
+    opacity: 0;
+    transform-origin: 100% 50%;
+    transition: transform 0.3s cubic-bezier(0.2,1,0.3,1), opacity 0.1s 0.2s linear;
+  }
+  .menu-item2.menu-item2--active::after,
+  .content--menu .menu-item2.menu-item2--active:hover::after,
+  .menu-item2:hover::after {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+    transform-origin: 0% 50%;
+    transition: transform 0.7s cubic-bezier(0.2,1,0.3,1), opacity 0.1s linear;
+  }
+  .content--menu .menu-item2::after {
+    transform-origin: 0% 50%;
+  }
+  .content--menu .menu-item2:hover::after {
+    transform: scale3d(0.15,1,1);
+  }
+  .splitting .word {
+    text-indent: 0;
+  }
+  .menu-item2 span {
+    pointer-events: none;
+  }
+  
+  
+  /* -------------RODAPE BAIXO---------------- */
+  
+  .tudo_rodape_baixo{
+    width: 100%;
+    height: 12vh;
+    border-style: solid;
+    border-color: rgba(0, 17, 58, 0.1);
+    border-width: 3px 0px 0px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo_footer{
+    height: 30%;
+    opacity: 0.5;
+    margin-left: 3%;
+  }
+  .logo_rodape{
+    margin-left: 5%;
+    height: 25%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+  }
+  .logo_vapt_rodape{
+    height: 100%;
+  }
+  .logo_porto_rodape{
+    height: 85%;
+  }
+  .lerami{
+    font-family: "Roobert TWHINT Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8214rem + 0.2679vw, 1.25rem);
+    line-height: auto;
+    letter-spacing: -0.04em;
+    text-align: right;
+    text-decoration: none;
+     
+    color: #00113A;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.8;
+    margin-right: 5%;
+  }
+  .redes_sociais_rodape{
+    display: flex;
+    gap: 2vh;
+  }
+  .redes_sociais{
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 17, 58, 0.05);
+    border-radius: 100%;
+    transition: 0.2s;
+    color: #00113A90;
+  }
+  .redes_sociais:hover{
+    background-color: #2B66FF;
+  }
+  
+  .redes_sociais:hover {
+    color: #ffffff;
+  }
+  .logo_nav{
+    height: 100%;
+  }
+  
+  
+  
+  
+  
+  /* ================================================================ */
+  /* RODAPE - MOBILE */
+  /* ================================================================ */
+  .rodape_todos_links{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+  }
+  
+  @media (max-width: 955px){
+    .links{
+      flex-direction: column;
+    }
+    .rodape_todos_links{
+      height: 60%;
+      align-items: flex-start;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+    .rodape_links{
+      width: 80%;
+      margin-left: 3%;
+      margin-top: 2vh;
+      flex-direction: column;
+    }
+    .sitemap_titu{
+      height: 47px;
+    }
+    .anchor2{
+      height: 47px;
+    }
+    .sitemap4{
+      margin-left: 0;
+      margin-top: 4vh;
+    }
+    .redes_sociais_rodape{
+      margin-top: 4vh;
+    }
+    .tudo_rodape_baixo{
+      margin-top: 3vh;
+      height: 11vh;
+    }
+    .logo_rodape{
+      height: 40%;
+      margin-left: 8%;
+    }
+  }
+  @media (max-width: 640px){
+    .logo_porto_rodape{
+      display: none;
+    }
+    .linha_divide{
+      display: none;
+    }
+    .rodape_baixo{
+      flex-direction: column;
+      justify-content: space-around;
+      height: 70%;
+    }
+    .lerami{
+      height: auto;
+    }
+    .anchor2{
+      width: 100%;
+    }
+    .sitemap{
+      width: 50%;
+    }
+    .sitemap4{
+      width: 50%;
+    }
+    .rodape_links{
+      width: 90%;
+      margin-top: 0;
+    }
+  }
+
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .logo_vapt_rodape{
+  filter: invert(100%) hue-rotate(180deg);
+}
+.dark-mode .logo_porto_rodape{
+  filter: invert(100%) hue-rotate(180deg);
+}
+.dark-mode .redes_sociais:hover{
+  color: #00113a;
+}

@@ -1,0 +1,38 @@
+.perfil_Nome{
+    height: 145px;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 17, 58, 0.05);
+     
+    border-radius: 35px;
+    padding: 16px 25px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: rgba(0, 17, 58, 0.80);
+}
+.perfil_Nome img{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    flex: none;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* ================================================================ */
+/* MOBILE */
+/* ================================================================ */
+@media (max-width: 555px) {
+    .perfil_Nome{
+        height: 110px;
+    }
+}

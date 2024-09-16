@@ -1,0 +1,77 @@
+.campo_config{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 15px;
+    font-family: Roobert TWHINT Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 23px 26px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+     
+    color: rgba(0, 17, 58, 0.70);
+}
+.campo_config:hover{
+    background-color: #00113a15;
+    color: rgba(0, 17, 58, 0.90);
+}
+.campo_config div{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.seta_config{
+    float: right;
+}
+
+.sair{
+    background: #ffe7e7;
+    color: #e02f2fb3;
+}
+.sair:hover{
+    background: #e72424d5;
+    color: #fff;
+}
+
+.outro{
+    background: #00113a08;
+}
+.outro:hover{
+    background-color: #00113a15;
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .campo_config{
+    background-color: #00113a10;
+}
+.dark-mode .campo_config:hover{
+    background-color: #00113a23;
+}
+.dark-mode .sair{
+    background: #ffe2e2;
+    color: #ff1e1e;
+}
+.dark-mode .sair:hover{
+    background: #ff7979;
+    color: #00113a;
+}
+.dark-mode .outro{
+    background: #00113a08;
+}
+.dark-mode .outro:hover{
+    background: #00113a12;
+}

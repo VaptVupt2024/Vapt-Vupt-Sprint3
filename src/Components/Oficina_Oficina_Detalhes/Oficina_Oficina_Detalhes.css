@@ -1,0 +1,332 @@
+.oficina_detalhes{
+    width: 100%;
+    height: 0vh;
+    overflow: hidden;
+    animation: oficina_detalhes 0.6s ease forwards;
+}
+@keyframes oficina_detalhes {
+    0%{
+        height: 0vh;
+    }
+    99%{
+        height: 115vh;
+    }
+    100%{
+        height: fit-content;
+    }
+}
+
+.mais_infos {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 12px 12px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "Endereco Telefone"
+    "Atendimento Atendimento";
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.Atendimento {
+    grid-area: Atendimento;
+    padding: 28px 30px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(0, 17, 58, 0.05);
+    border-radius: 16px;
+}
+
+.Endereco { 
+    grid-area: Endereco;     
+    padding: 28px 30px;    
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(0, 17, 58, 0.05);
+    border-radius: 16px;
+}
+
+.Telefone { 
+    grid-area: Telefone;     
+    padding: 28px 30px;    
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(0, 17, 58, 0.05);
+    border-radius: 16px;
+}
+
+
+.mais_infos a{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+     
+    color: rgba(0, 17, 58, 0.80);
+}
+.mais_infos a:hover{
+    color: #2B66FF !important;
+}
+.mais_infos a svg{
+    flex-shrink: 0;
+}
+.mais_infos a div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mais_infos p{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.7321rem + 0.0893vw, 0.875rem);
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.servicos_detalhes{
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.servicos_detalhes .busca_servicos_detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 30px 20px;
+    box-sizing: border-box;
+}
+.servicos_detalhes h3{
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 1.7143rem + 0.1786vw, 2rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0;
+     
+    color: rgba(0, 17, 58, 0.8);
+}
+.servicos_detalhes form label{
+    width: 318px;
+     
+    background: rgba(0, 17, 58, 0.05);
+     
+    border-radius: 98px;
+    padding: 23px 34px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicos_detalhes form label input{
+    font-family: Roobert TWHINT SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.9821rem + 0.0893vw, 1.125rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+    min-width: 0;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+     
+    color: rgba(0, 17, 58, 0.80);
+}
+.servicos_detalhes form label input::placeholder{
+    color: rgba(0, 17, 58, 0.60);
+}
+.servicos_detalhes form label svg{
+    color: #2B66FF;
+}
+
+
+
+.lista_servicos_detalhes{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+.servicos_detalhes ul{
+    width: 100%;
+    height: 60vh;
+    overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+.servicos_detalhes ul li{
+    padding: 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(0, 17, 58, 0.05);
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1rem, 0.9821rem + 0.0893vw, 1.125rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+     
+    color: rgba(0, 17, 58, 0.8);
+}
+.servicos_detalhes ul li:last-child{
+    border: none;
+}
+
+
+/* -------------MUDAR O STYLE DO SCROLLBAR---------------- */
+
+.servicos_detalhes ul::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+  border-radius: 15px;
+}
+
+.servicos_detalhes ul::-webkit-scrollbar-track {
+  background: rgba(0, 17, 58, 0.10);        /* color of the tracking area */
+  border: none;
+}
+
+.servicos_detalhes ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 17, 58, 0.40);    /* color of the scroll thumb */
+  border-radius: 10px;
+}
+.servicos_detalhes ul::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 17, 58, 0.80);
+}
+
+
+@media (max-width:888px) {
+    .mais_infos {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
+        gap: 12px 12px;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+          "Endereco"
+          "Telefone"
+          "Atendimento";
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      .Endereco{
+          padding: 20px 25px;
+          gap: 15px;
+      }
+      .Telefone{
+          padding: 20px 25px;
+          gap: 15px;
+      }
+      .Atendimento{
+          padding: 20px 25px;
+          gap: 15px;
+      }
+      .servicos_detalhes .busca_servicos_detalhes{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0px 0px 30px 0px;
+      }
+      .servicos_detalhes h3{
+        padding-left: 10px;
+      }
+      .servicos_detalhes form{
+        width: 100%;
+      }
+      .servicos_detalhes form label{
+        width: 100%;
+      }
+      .servicos_detalhes ul{
+        padding: 5px 0px;
+      }
+}
+@media (max-width:555px) {
+    .mais_infos{
+        padding: 15px;
+    }
+    .Endereco{
+        padding: 20px 25px;
+        gap: 15px;
+    }
+    .Telefone{
+        padding: 20px 25px;
+        gap: 15px;
+    }
+    .Atendimento{
+        padding: 20px 25px;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .mais_infos{
+    background-color: rgba(0, 17, 58, 0.063);
+}
+.dark-mode .servicos_detalhes{
+    background-color: rgba(0, 17, 58, 0.063);
+}
+.dark-mode .servicos_detalhes ul{
+    background: rgba(0, 17, 58, 0.10);
+}

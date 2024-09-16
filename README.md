@@ -1,10 +1,4 @@
 
-#==========FAZER ANTES=========================
-# ATUALIZAR O LINK QUANDO FAZ O CADASTRO
-# COLOCAR LINK PRO DIRETÓRIO VAPT-VUPT AQUI
-# COLOCAR LINK PRO VIDEO PITCH AQUI
-#==============================================
-
 # Vapt-Vupt - Challenge Porto Seguro
 
 **Descrição do Projeto**
@@ -29,8 +23,6 @@ Vapt-Vupt é uma aplicação web desenvolvida para o Challenge Porto Seguro da F
     * TypeScript
     * HTML5
     * CSS3
-    * NEXT.JS (para roteamento e otimização)
-    * Styled-components ou CSS3 Modules (para estilização) 
 * **Back-End:** (a definir - de acordo com o desenvolvimento do projeto)
 * **Banco de Dados:** (a definir - de acordo com o desenvolvimento do projeto)
 
@@ -57,11 +49,6 @@ Vapt-Vupt é uma aplicação web desenvolvida para o Challenge Porto Seguro da F
 * Leonardo Botelho - RM: 556110 - Turma: 1TDSB - GitHub: https://github.com/Wanderluzter
 * Mirian Bronzati - RM: 555041 - Turma: 1TDSB - GitHub: https://github.com/nakedmimi
 * Raul Clauson| - RM: 555006 - Turma: 1TDSB - GitHub: https://github.com/RaulClauson
-
-
-## Diretório Vapt-Vupt
-
-* 
 
 ## Contato
 

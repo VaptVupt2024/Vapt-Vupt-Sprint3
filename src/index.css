@@ -1,0 +1,179 @@
+
+
+/* ================================================================ */
+/* FONTES */
+/* ================================================================ */
+
+@font-face {
+  font-family: "Roobert TWHINT Bold";
+  src: url(../public/Fonts/RoobertTWHINTBold.ttf);
+  src: url('/public/Fonts/RoobertTWHINTBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roobert TWHINT Regular";
+  src: url(../public/Fonts/RoobertTWHINTRegular.ttf);
+  src: url('/public/Fonts/RoobertTWHINTRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roobert TWHINT SemiBold";
+  src: url(../public/Fonts/RoobertTWHINTSemiBold.ttf);
+  src: url('/public/Fonts/RoobertTWHINTSemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url(../public/Fonts/PPMoriSemiBold.ttf);
+  src: url('/public/Fonts/PPMoriSemiBold.ttf') format('truetype');
+}
+
+  /* -------------MUDAR O STYLE DO SCROLLBAR---------------- */
+  
+  body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;        /* color of the tracking area */
+    border-left: 1px solid #DDDFE3;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #C4C7D0;    /* color of the scroll thumb */
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #00113A;
+  }
+
+/* ================================================================ */
+/* TUDO BASE */
+/* ================================================================ */
+
+:root {
+  color-scheme: light dark;
+  background-color: #f1f1f1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root{
+  display: flex;
+  position: relative;
+}
+section{
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.section{
+  opacity: 0;
+  animation: section 0.8s 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+}
+@keyframes section {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.dentro_section{
+  width: 100%;
+  max-width: 1219px;
+  padding: 1vw 4vw;
+  box-sizing: border-box;
+  overflow: auto;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.titulo_catego_pag{
+  font-family: Roobert TWHINT SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 0.6em;
+  margin-left: 15px;
+  margin-top: 8vh;
+   
+  color: rgba(0, 17, 58, 0.80);
+}
+.titulo_config_perfil{
+  font-family: Roobert TWHINT SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 0.6em;
+  margin-left: 15px;
+   
+  color: rgba(0, 17, 58, 0.80);
+}
+
+@media (max-width:888px){
+  .dentro_section{
+    width: 100%;
+    padding: 17px 24px;
+    box-sizing: border-box;
+  }
+  section{
+    min-height: 95dvh;
+    padding-top: 45px;
+    box-sizing: border-box;
+  }
+}
+
+/* ================================================================ */
+/* ACESSIBILIDADE */
+/* ================================================================ */
+[vw] [vw-access-button]{
+  transition: 0.2s ease;
+}
+.closed{
+  transform: translateX(20vw);
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.dark-mode img, .dark-mode video, .dark-mode iframe {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.dark-mode body::-webkit-scrollbar-track {
+  background: #0E0E0E;        /* color of the tracking area */
+  border-left: 1px solid #1B1C1F;
+}
+
+.dark-mode body::-webkit-scrollbar-thumb {
+  background-color: #303239;    /* color of the scroll thumb */
+}
+
+.dark-mode body::-webkit-scrollbar-thumb:hover {
+  background-color: #646C7D;
+}

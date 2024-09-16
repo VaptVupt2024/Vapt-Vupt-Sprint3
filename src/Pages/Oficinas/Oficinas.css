@@ -1,0 +1,8 @@
+.oficinas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6px;
+    border: 1.6px solid rgba(0, 17, 58, 0.08);
+    border-radius: 15px;
+    overflow: hidden;
+}

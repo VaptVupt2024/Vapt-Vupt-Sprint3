@@ -1,0 +1,93 @@
+.MeuCarro_Banner{
+    width: 100%;
+    height: 258px;
+    background: #ffffff;
+     
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.MeuCarro_Banner div{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+.MeuCarro_Banner img{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.MeuCarro_Banner h2{
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.2143rem + 0.1786vw, 1.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 10px;
+     
+    color: #00113a;
+}
+.MeuCarro_Banner a{
+    padding: 18px;
+    box-sizing: border-box;
+    font-family: Roobert TWHINT Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    line-height: 19px;
+    letter-spacing: -0.04em;
+    text-align: center;
+     
+    color: #ffffff;
+    background: #2b66ff;
+ 
+    border-radius: 15px;
+}
+.MeuCarro_Banner a:hover{
+    background: #00113a;
+}
+
+@media (max-width: 555px){
+    .MeuCarro_Banner{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .MeuCarro_Banner div{
+        height: 85%;
+        margin: 24px;
+    }    
+    .MeuCarro_Banner div h2{
+        padding-left: 6px;
+        margin: 0.6em 0px 2em 0px;
+    }
+    .MeuCarro_Banner img{
+        width: 100%;
+        min-height: 100px;
+        border-radius: 0;
+    }
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode .MeuCarro_Banner{
+  background-color: #00113a10;
+}
+.dark-mode .MeuCarro_Banner div a{
+    background-color: #00113a23;
+    color: #000;
+}
+.dark-mode .MeuCarro_Banner div a:hover{
+    background-color: #00113a40;
+    color: #000;
+}

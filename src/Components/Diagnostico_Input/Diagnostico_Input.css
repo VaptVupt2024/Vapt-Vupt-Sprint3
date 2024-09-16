@@ -1,0 +1,104 @@
+#Diagnostico_Input{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+#Diagnostico_Input label{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 11px 14px;
+    box-sizing: border-box;
+
+    width: clamp(0px, 1028px, 100%);
+    max-width: 100%;
+    min-height: 70px;
+    background: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+
+    cursor: text;
+    transition: 0.2s ease;
+}
+#Diagnostico_Input label span {
+  display: block;
+  overflow: hidden;
+  min-height: 17px;
+  resize: none;
+  font-family: PP Mori;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+  line-height: 1;
+  text-align: left;
+
+  padding: 15px 30px;
+  box-sizing: border-box;
+  overflow-y: visible;
+   
+  color: rgba(0, 17, 58, 0.80);  
+}
+#Diagnostico_Input label span:focus{
+    outline-width: 0;
+}
+#Diagnostico_Input label span[contenteditable]:empty::before {
+  content: "Digite sua pergunta aqui";
+  color: rgba(0, 17, 58, 0.40);  
+  pointer-events: none;
+}
+#Diagnostico_Input label button{
+    min-width: 97px;
+    height: 48px;
+     
+    color: #fff;
+    background: #2b66ff;
+    border-radius: 52px;    
+
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#Diagnostico_Input label button:hover{
+    background: #00113A;
+}
+#Diagnostico_Input p{
+    width: 80%;
+    font-family: Roobert TWHINT Regular;
+    font-style: normal;
+    font-size: clamp(0.625rem, 0.5893rem + 0.1786vw, 0.875rem);
+    line-height: auto;
+    text-align: center;
+     
+    color: rgba(0, 17, 58, 0.30000001192092896);    
+}
+@media (max-width: 888px) {
+    #Diagnostico_Input label span{
+        padding: 15px 21px;
+    }
+    #Diagnostico_Input label button{
+        min-width: 48px;
+    }
+}
+
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+
+.dark-mode #Diagnostico_Input label{
+    background-color: #00113A10;
+}
+.dark-mode #Diagnostico_Input label button{
+    background-color: #00113A60;
+    color: rgba(255, 255, 255, 0.9);
+}
+.dark-mode #Diagnostico_Input label button:hover{
+    background-color: rgba(0, 17, 58, 0.9);
+}

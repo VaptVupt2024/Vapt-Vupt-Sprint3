@@ -1,18 +1,19 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import LogoIcon from '../../assets/Logo_icon/Logo_icon';
 import './Diagnostico_Chat.css';
 
 const DiagnosticoChat: React.FC = () => {
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const initializeChat = () => {
-    // Remove existing Watson Assistant Chat if already initialized
     if (window.watsonAssistantChatOptions) {
       const watsonChatHost = document.querySelector('.WatsonAssistantChatHost');
       if (watsonChatHost && watsonChatHost.parentNode) {
         watsonChatHost.parentNode.removeChild(watsonChatHost);
       }
-      window.watsonAssistantChatOptions = undefined; // Set to undefined
+      window.watsonAssistantChatOptions = undefined;
     }
 
     window.watsonAssistantChatOptions = {
@@ -29,13 +30,9 @@ const DiagnosticoChat: React.FC = () => {
               if (watsonChatHost && chatContainerRef.current && watsonChatHost instanceof HTMLElement) {
                 chatContainerRef.current.appendChild(watsonChatHost);
                 watsonChatHost.style.width = '100%';
-              } else {
-                console.error("Chatbot host or target container not found!");
               }
               resolve();
             }, 200);
-          } else {
-            console.error("Initial chat container not found!");
           }
         });
       },
@@ -48,11 +45,36 @@ const DiagnosticoChat: React.FC = () => {
     document.head.appendChild(script);
   };
 
-  // Initialize Watson chat on component mount
+  // Attach event listener when button is available
   useEffect(() => {
+    const observeButton = () => {
+      const buttonClass = "WAC__button-0.cds--chat-btn.cds--chat-btn--quick-action.cds--btn.cds--btn--sm.cds--layout--size-sm.cds--btn--ghost";
+      
+      // MutationObserver to detect when the button is added to the DOM
+      const observer = new MutationObserver((mutationsList) => {
+        mutationsList.forEach((mutation) => {
+          if (mutation.type === 'childList') {
+            const button = document.querySelector(`button.${buttonClass}`);
+            if (button) {
+              button.addEventListener('click', () => {
+                navigate('/Oficinas');
+              });
+              observer.disconnect(); // Stop observing once the button is found
+            }
+          }
+        });
+      });
+
+      // Start observing the chat container for changes
+      if (chatContainerRef.current) {
+        observer.observe(chatContainerRef.current, { childList: true, subtree: true });
+      }
+    };
+
     initializeChat();
-    
-    // Clean up the chat when component unmounts
+    observeButton();
+
+    // Clean up on unmount
     return () => {
       const watsonChatHost = document.querySelector('.WatsonAssistantChatHost');
       if (watsonChatHost && watsonChatHost.parentNode) {
@@ -60,7 +82,7 @@ const DiagnosticoChat: React.FC = () => {
       }
       window.watsonAssistantChatOptions = undefined;
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="TUDO_CHATBOT ani_entra2">

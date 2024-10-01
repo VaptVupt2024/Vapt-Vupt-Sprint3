@@ -23,8 +23,8 @@ const Ajuda_Form = () => {
                     <ul>
                         <li>
                             <a href="mailto:vaptvuptchallenge@gmail.com" tabIndex={3}><MdOutlineEmail size={20} /></a>
-                            <a href="" tabIndex={3}><FaWhatsapp size={18} /></a>
-                            <a href="" tabIndex={3}><FaInstagram size={18} /></a>
+                            <a tabIndex={3}><FaWhatsapp size={18} /></a>
+                            <a tabIndex={3}><FaInstagram size={18} /></a>
                             <a href="https://youtu.be/ZoeoYKEFKxc?si=5JMdihVcnd5PidSc" tabIndex={3}><AiOutlineYoutube size={22} /></a>
                         </li>
                         <a href="mailto:vaptvuptchallenge@gmail.com" tabIndex={3}>vaptvuptchallenge@gmail.com</a>

@@ -1,5 +1,3 @@
-
-
 /* ================================================================ */
 /* FONTES */
 /* ================================================================ */
@@ -61,6 +59,12 @@
   display: flex;
   position: relative;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 section{
   position: relative;
   width: 100%;
@@ -94,12 +98,6 @@ section{
 a{
   text-decoration: none;
   cursor: pointer;
-}
-html, body{
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .titulo_catego_pag{

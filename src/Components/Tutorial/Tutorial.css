@@ -14,6 +14,8 @@
     pointer-events: none;
     opacity: 0;
     animation: entra_tutorial 1s 1.5s ease forwards;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 .close{
     animation: sai_tutorial 0.8s ease forwards;
@@ -27,7 +29,6 @@
     cursor: pointer;
     background: rgba(0, 17, 58, 0.15000000596046448);
  
-    backdrop-filter: blur(10.084033012390137px);
     animation: entra_tutorial 1s 1.5s ease forwards;
     opacity: 0;
 }
@@ -157,7 +158,7 @@
   }
 .tutorial_images{
     width: 100%;
-    height: auto;
+    max-height: 45%;
     aspect-ratio: 1920 / 955;
     position: relative;
     border-radius: 28px;

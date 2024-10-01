@@ -3,6 +3,7 @@
     height: 0vh;
     overflow: hidden;
     animation: oficina_detalhes 0.6s ease forwards;
+    background-color: #fff;
 }
 @keyframes oficina_detalhes {
     0%{
@@ -26,7 +27,6 @@
     "Atendimento Atendimento";
     padding: 30px;
     box-sizing: border-box;
-    background-color: #fff;
 }
 .Atendimento {
     grid-area: Atendimento;
@@ -121,7 +121,6 @@
 
 
 .servicos_detalhes{
-    background-color: #fff;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -240,6 +239,23 @@
 }
 
 
+
+
+
+
+
+
+
+.maps{
+    margin: 0px 30px 0px 30px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.maps_container{
+    background-color: #fff;
+    color: #000;
+}
+
 @media (max-width:888px) {
     .mais_infos {  
         grid-template-columns: 1fr;
@@ -252,6 +268,12 @@
           "Atendimento";
           padding: 20px;
           box-sizing: border-box;
+      }
+      .maps{
+        margin: 0px 20px 0px 20px;
+      }
+      .servicos_detalhes{
+        padding: 20px;
       }
       .Endereco{
           padding: 20px 25px;
@@ -269,7 +291,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
-        padding: 0px 0px 30px 0px;
+        padding: 0px 0px 20px 0px;
       }
       .servicos_detalhes h3{
         padding-left: 10px;
@@ -287,6 +309,16 @@
 @media (max-width:555px) {
     .mais_infos{
         padding: 15px;
+    }
+    .maps{
+        margin: 0px 15px 0px 15px;
+    }
+    .servicos_detalhes{
+        padding: 15px;
+        padding-top: 30px;
+    }
+    .servicos_detalhes .busca_servicos_detalhes{
+        padding-bottom: 15px;
     }
     .Endereco{
         padding: 20px 25px;
@@ -321,12 +353,9 @@
 /* DARK MODE */
 /* ================================================================ */
 
-.dark-mode .mais_infos{
-    background-color: rgba(0, 17, 58, 0.063);
-}
-.dark-mode .servicos_detalhes{
-    background-color: rgba(0, 17, 58, 0.063);
-}
 .dark-mode .servicos_detalhes ul{
     background: rgba(0, 17, 58, 0.10);
+}
+.dark-mode .oficina_detalhes{
+    background-color: rgba(0, 17, 58, 0.063);
 }

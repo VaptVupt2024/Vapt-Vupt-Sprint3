@@ -157,6 +157,7 @@
   }
   #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round{
     width: auto;
+    height: 0px !important;
     position: absolute;
     left: 0;
     top: 0px !important;

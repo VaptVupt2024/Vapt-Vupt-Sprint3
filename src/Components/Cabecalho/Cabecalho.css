@@ -208,14 +208,14 @@
     color: #00113a;
 }
 .dark-mode #cabecalho button{
-    background-color: #00113a15;
+    background-color: #DCDEE1;
     color: rgba(0, 17, 58, 0.8);
 }
 .dark-mode #cabecalho button:hover{
-    background-color: #00113a20;
+    background-color: #DCDEE1;
     color: #00113a;
 }
 .dark-mode .cabecalho_ativa:hover{
     color: #00113A !important;
-    background: #00113A15 !important;
+    background: #DCDEE1 !important;
 }

@@ -27,7 +27,6 @@ const Ajuda_Form = () => {
                             <a tabIndex={3}><FaInstagram size={18} /></a>
                             <a href="https://youtu.be/ZoeoYKEFKxc?si=5JMdihVcnd5PidSc" tabIndex={3}><AiOutlineYoutube size={22} /></a>
                         </li>
-                        <a href="mailto:vaptvuptchallenge@gmail.com" tabIndex={3}>vaptvuptchallenge@gmail.com</a>
                     </ul>
                     <button type="submit" role="textbox" aria-label="Digite seu email" tabIndex={3}>Enviar</button>
                 </div>

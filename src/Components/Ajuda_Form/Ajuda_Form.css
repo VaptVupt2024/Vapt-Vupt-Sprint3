@@ -17,7 +17,7 @@
     flex: none;
 }
 .ajuda_Form div img{
-    width: 50%;
+    width: 35%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -40,7 +40,7 @@
     letter-spacing: -0.04em;
     text-align: left;
     margin: 0;
-    padding: 22px 35px;
+    padding: 22px 30px;
     box-sizing: border-box;
      
     color: rgba(0, 17, 58, 0.70);
@@ -68,7 +68,7 @@
     letter-spacing: -0.04em;
     text-align: left;
     margin: 0;
-    padding: 22px 35px;
+    padding: 22px 30px;
     box-sizing: border-box;
      
     color: rgba(0, 17, 58, 0.70);
@@ -80,7 +80,7 @@
     resize: none;
 }
 .ajuda_Form div button{
-    width: 50%;
+    width: 100%;
     font-family: Roobert TWHINT Bold;
     font-style: normal;
     font-weight: 600;
@@ -104,7 +104,7 @@
     background-color: #00113A;
 }
 .ajuda_Form div ul{
-    width: 50%;
+    width: 35%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -114,7 +114,7 @@
     flex: none;
 }
 .ajuda_Form div ul li{
-    width: 50%;
+    width: 100%;
     list-style: none;
     border-radius: 10px;
     padding: 25px 30px;
@@ -164,10 +164,19 @@
     background: rgba(0, 17, 58, 0.10);
 }
 
+
 /* ================================================================ */
-/* TABLET */
+/* MOBILE */
 /* ================================================================ */
-@media (max-width: 1200px) {
+@media (max-width: 555px) {
+    .ajuda_Form div img{
+        width: 100%;
+        height: 250px;
+    }
+    .ajuda_Form div ul{
+        width: 100%;
+        gap: 10px;
+    }
     .ajuda_Form div:first-child{
         flex-direction: column;
         gap: 10px;
@@ -179,31 +188,11 @@
     .ajuda_Form div div{
         flex-direction: column;
     }
-    .ajuda_Form div img{
-        width: 100%;
-        height: 250px;
-    }
-    .ajuda_Form div ul{
-        width: 100%;
-        gap: 10px;
-    }
-    .ajuda_Form div ul li{
-        padding: 22px 35px;
-    }
-    .ajuda_Form div button{
-        width: 100%;
-    }
-}
-
-/* ================================================================ */
-/* MOBILE */
-/* ================================================================ */
-@media (max-width: 555px) {
     .ajuda_Form{
         padding: 18px 22px;
     }
     .ajuda_Form div ul li{
-        padding: 22px 25px;
+        padding: 20px 30px;
     }
     .ajuda_Form div label div input{
         padding: 22px 25px;
@@ -213,6 +202,9 @@
     }
     .ajuda_Form div ul a{
         padding: 22px 25px;
+    }
+    .ajuda_Form div button{
+        padding: 30px;
     }
 }
 
